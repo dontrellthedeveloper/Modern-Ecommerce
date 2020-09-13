@@ -7,6 +7,7 @@ import {NoMatch} from './NoMatch';
 import {Layout} from './components/Layout';
 import {NavigationBar} from "./components/NavigationBar";
 import {Jumbotron} from './components/Jumbotron';
+import Cards from "./cards/Cards";
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
             <React.Fragment>
                 <NavigationBar/>
                 <Jumbotron/>
+                <Cards/>
                 <Layout>
                     <Router>
                         <Switch>
