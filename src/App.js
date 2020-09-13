@@ -8,6 +8,7 @@ import {Layout} from './components/Layout';
 import {NavigationBar} from "./components/NavigationBar";
 import {Jumbotron} from './components/Jumbotron';
 import Cards from "./cards/Cards";
+import HomePage from './components/homepage.component';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
                 <NavigationBar/>
                 <Jumbotron/>
                 <Cards/>
+                <HomePage/>
                 <Layout>
                     <Router>
                         <Switch>
