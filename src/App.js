@@ -9,6 +9,8 @@ import {NavigationBar} from "./components/NavigationBar";
 import {Jumbotron} from './components/Jumbotron';
 import Cards from "./cards/Cards";
 import HomePage from './components/homepage.component';
+import ReactVideoPlayer from './components/video-player.component';
+import './App.css';
 
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
                 <Jumbotron/>
                 <Cards/>
                 <HomePage/>
+                <ReactVideoPlayer/>
                 <Layout>
                     <Router>
                         <Switch>
