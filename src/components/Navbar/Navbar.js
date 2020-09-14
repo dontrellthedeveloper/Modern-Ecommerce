@@ -44,7 +44,7 @@ const Navbar = () => {
                     <NavbarContainer>
                         <NavLogo className="navigation-logo" to='/'>
                             <NavIcon/>
-                            ULTRA
+                            X-REBEL
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>{
                             click ? <FaTimes/> : <FaBars/>}
