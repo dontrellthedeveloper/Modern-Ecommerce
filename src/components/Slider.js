@@ -24,9 +24,11 @@ function Slider() {
 
     const goRight = () => {
 
-
         (x ===  -100*(sliderArr.length-1))?setX(0) : setX(x-100);
     };
+
+    setTimeout(goRight, 8000);
+
     return <div className='slider'>
         {
             sliderArr.map((item, index) => {
