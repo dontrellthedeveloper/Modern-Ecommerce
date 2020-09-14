@@ -17,6 +17,7 @@ import GlobalStyle from './globalStyles';
 import Services from './components/Services';
 import HomeSection from './pages/HomeSection';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
             <React.Fragment>
                 <Router>
                 <GlobalStyle/>
+                <ScrollToTop/>
                 <Navbar/>
                 <Switch>
                     <Route exact path="/" component={HomeSection}/>
