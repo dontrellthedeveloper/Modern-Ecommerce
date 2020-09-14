@@ -10,6 +10,7 @@ import {Jumbotron} from './components/Jumbotron';
 import Cards from "./cards/Cards";
 import HomePage from './components/homepage.component';
 import ReactVideoPlayer from './components/video-player.component';
+import Slider from './components/Slider'
 import './App.css';
 
 
@@ -18,10 +19,12 @@ class App extends Component {
         return (
             <React.Fragment>
                 <NavigationBar/>
+                <Slider/>
+                <ReactVideoPlayer/>
+                <HomePage/>
                 <Jumbotron/>
                 <Cards/>
-                <HomePage/>
-                <ReactVideoPlayer/>
+
                 <Layout>
                     <Router>
                         <Switch>
