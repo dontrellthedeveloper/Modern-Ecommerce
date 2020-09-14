@@ -7,7 +7,7 @@ import {NoMatch} from './NoMatch';
 import {Layout} from './components/Layout';
 
 
-import {Navbar} from "./components";
+import {Navbar, Footer} from "./components";
 import {Jumbotron} from './components/Jumbotron';
 import Cards from "./cards/Cards";
 import HomePage from './components/homepage.component';
@@ -32,6 +32,7 @@ class App extends Component {
                     <Route path='/contact' component={Contact}/>
                     <Route component={NoMatch}/>
                 </Switch>
+                <Footer/>
                 </Router>
             </React.Fragment>
         );
