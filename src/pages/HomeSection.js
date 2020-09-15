@@ -7,13 +7,46 @@ import {
 } from './Data';
 import { InfoSection } from '../components';
 
+import {Jumbotron} from '../components/Jumbotron';
+import Cards from "../cards/Cards";
+import HomePage from '../components/homepage.component';
+import ReactVideoPlayer from '../components/video-player.component';
+import Slider from '../components/Slider';
+import Services from '../components/Services';
+
 const HomeSection = () => {
     return (
         <>
-            <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjThree}/>
-            <InfoSection {...homeObjFour}/>
+
+        <InfoSection {...homeObjOne}/>
+        <Services/>
+        <HomePage/>
+        
+        <ReactVideoPlayer/>
+
+        <Jumbotron/>
+
+        <Slider/>
+
+
+        <InfoSection {...homeObjThree}/>
+
+        <InfoSection {...homeObjTwo}/>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
         </>
     )
 }
