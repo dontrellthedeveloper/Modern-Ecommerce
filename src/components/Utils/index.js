@@ -1,3 +1,3 @@
-export {default as Navbar} from '../Navbar/navbar.component';
-export {default as Footer} from '../Footer/footer.component';
-export {default as InfoSection} from '../InfoSection/infosection.component';
+export {default as Navbar} from '../navbar/navbar.component';
+export {default as Footer} from '../footer/footer.component';
+export {default as InfoSection} from '../infosection/infosection.component';

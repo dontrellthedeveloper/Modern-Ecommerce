@@ -7,20 +7,19 @@ import {
 } from './Data';
 import { InfoSection } from '../components/Utils';
 
-import {Jumbotron} from '../components/Jumbotron/jumbotron.component';
-import Cards from "../components/Cards/cards.component";
-import HomePage from '../components/HomePage/homepage.component';
-import ReactVideoPlayer from '../components/VideoPlayer/videoplayer.component';
-import Slider from '../components/Slider/slides.component';
-import Services from '../components/ServicesSection/services.component';
-import HomepageSlider from '../components/HomepageSlider/homepageslider.component';
+import {Jumbotron} from '../components/jumbotron/jumbotron.component';
+import Cards from "../components/cards/cards.component";
+import HomePage from '../components/homepage/homepage.component';
+import ReactVideoPlayer from '../components/videoplayer/videoplayer.component';
+import Slider from '../components/slider/slides.component';
+import Services from '../components/servicessection/services.component';
+import HomepageSlider from '../components/homepageslider/homepageslider.component';
 
 const HomeSection = () => {
     return (
         <>
 
         <HomepageSlider/>
-
 
         <HomePage/>
         
@@ -32,24 +31,6 @@ const HomeSection = () => {
 
 
         <InfoSection {...homeObjTwo}/>
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
 
 
         </>
