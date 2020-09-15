@@ -31,7 +31,7 @@ const HomeSection = () => {
 
         <InfoSection {...homeObjThree}/>
 
-        <InfoSection {...homeObjTwo}/>
+
 
      
 
