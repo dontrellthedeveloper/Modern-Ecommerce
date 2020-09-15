@@ -12,7 +12,7 @@ import {Nav,
     NavLinks,
     NavItemBtn,
     NavBtnLink
-} from './Navbar.elements';
+} from './navbar.elements';
 
 
 

@@ -11,7 +11,7 @@ import {
     Subtitle,
     ImgWrapper,
     Img
-} from './InfoSection.elements';
+} from './infosection.elements';
 
 const InfoSection = ({
     primary,

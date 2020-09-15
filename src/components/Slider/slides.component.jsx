@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import ImgComp from "./ImgComp";
-import i1 from "../assets/testimonial-1.jpg";
-import i2 from "../assets/testimonial-2.jpg";
-import i3 from "../assets/testimonial-3.jpg";
-import i4 from "../assets/testimonial-4.jpg";
-import i5 from "../assets/testimonial-5.jpg";
+import i1 from "../../assets/testimonial-1.jpg";
+import i2 from "../../assets/testimonial-2.jpg";
+import i3 from "../../assets/testimonial-3.jpg";
+import i4 from "../../assets/testimonial-4.jpg";
+import i5 from "../../assets/testimonial-5.jpg";
 
 import './slider.styles.scss'
 

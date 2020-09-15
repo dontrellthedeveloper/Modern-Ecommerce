@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Card from './cardui';
+import Card from './cardui.component';
 
-import modernImg from '../assets/modern-card-1.jpg';
-import modernImg2 from '../assets/modern-card-2.jpg';
-import modernImg3 from '../assets/modern-card-3.jpg';
+import modernImg from '../../assets/modern-card-1.jpg';
+import modernImg2 from '../../assets/modern-card-2.jpg';
+import modernImg3 from '../../assets/modern-card-3.jpg';
 
 class Cards extends Component {
     render() {

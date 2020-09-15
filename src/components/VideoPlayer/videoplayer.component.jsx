@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from "react-player";
 
-import './video-player.styles.scss';
+import './videoplayer.styles.scss';
 
 
 

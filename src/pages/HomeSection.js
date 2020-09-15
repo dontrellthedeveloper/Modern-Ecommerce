@@ -5,31 +5,36 @@ import {
     homeObjThree,
     homeObjFour
 } from './Data';
-import { InfoSection } from '../components';
+import { InfoSection } from '../components/Utils';
 
-import {Jumbotron} from '../components/Jumbotron';
-import Cards from "../cards/Cards";
-import HomePage from '../components/homepage.component';
-import ReactVideoPlayer from '../components/video-player.component';
-import Slider from '../components/Slider';
-import Services from '../components/Services';
+import {Jumbotron} from '../components/Jumbotron/jumbotron.component';
+import Cards from "../components/Cards/cards.component";
+import HomePage from '../components/HomePage/homepage.component';
+import ReactVideoPlayer from '../components/VideoPlayer/videoplayer.component';
+import Slider from '../components/Slider/slides.component';
+import Services from '../components/ServicesSection/services.component';
+import HomepageSlider from '../components/HomepageSlider/homepageslider.component';
 
 const HomeSection = () => {
     return (
         <>
 
-        <InfoSection {...homeObjOne}/>
-        <Services/>
+        <HomepageSlider/>
+
+
         <HomePage/>
         
         <ReactVideoPlayer/>
-
+        <Services/>
         <Jumbotron/>
-
-        <Slider/>
-
-
         <InfoSection {...homeObjThree}/>
+
+
+
+        <InfoSection {...homeObjTwo}/>
+
+
+
 
 
 
