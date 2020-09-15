@@ -18,9 +18,10 @@ import HomepageSlider from '../components/homepageslider/homepageslider.componen
 const HomeSection = () => {
     return (
         <>
-
+        <InfoSection {...homeObjOne}/>
+        {/*
         <HomepageSlider/>
-
+        */}    
         <HomePage/>
         
         <ReactVideoPlayer/>
