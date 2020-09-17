@@ -60,14 +60,10 @@ const Navbar = () => {
                                     Collection
                                 </NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <NavLinks to='/products'>
-                                    Products
-                                </NavLinks>
-                            </NavItem>
+
                             <NavItemBtn>
                                 {button ? (
-                                    <NavBtnLink to='/sign-up'>
+                                    <NavBtnLink to='/signin'>
                                         <CoolButton primary>SIGN UP</CoolButton>
                                     </NavBtnLink>
                                 ) : (

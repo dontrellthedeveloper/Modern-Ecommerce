@@ -10,6 +10,7 @@ import ScrollToTop from './components/Utils/ScrollToTop';
 import ShopPage from './pages/shop/shop.component';
 
 import './App.css';
+import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 
 class App extends Component {
@@ -22,7 +23,8 @@ class App extends Component {
                 <Navbar/>
                 <Switch>
                     <Route exact path="/" component={HomeSection}/>
-                    <Route path="/" component={ShopPage}/>
+                    <Route path="/shop" component={ShopPage}/>
+                    <Route path="/signin" component={SignInAndSignUp}/>
                 </Switch>
                 <Footer/>
                 </Router>
