@@ -56,8 +56,8 @@ const Navbar = () => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/services-2'>
-                                    Services
+                                <NavLinks to='/shop'>
+                                    Collection
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
