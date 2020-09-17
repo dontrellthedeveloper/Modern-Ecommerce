@@ -15,6 +15,8 @@ import Slider from '../components/slider/slides.component';
 import Services from '../components/servicessection/services.component';
 import HomepageSlider from '../components/homepageslider/homepageslider.component';
 import MainSlider from '../components/mainslider/mainslider.component';
+import ProductBanner from '../components/productbanner/productbanner.component';
+import ProductBanner2 from '../components/productbanner2/productbanner2.component';
 
 const HomeSection = () => {
     return (
@@ -27,11 +29,14 @@ const HomeSection = () => {
 
         <ReactVideoPlayer/>
         <Services/>
+        <ProductBanner/>
         <Jumbotron/>
         <InfoSection {...homeObjThree}/>
-
-
-
+        <ProductBanner2/>
+        <InfoSection {...homeObjOne}/>
+        {/*
+        <Slider/>
+        */}
         <InfoSection {...homeObjTwo}/>
 
 
