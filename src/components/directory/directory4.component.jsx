@@ -30,7 +30,13 @@ class Directory4 extends React.Component {
                     size: 'large',
                     id: 4,
                     linkUrl: 'shop/women-bags'
-                }
+                },
+                {
+                    title: 'shades',
+                    imageUrl: 'https://i.ibb.co/BygVHKq/women-shades-front-2-Cropped.jpg',
+                    id: 19,
+                    linkUrl: 'shop/shades'
+                },
             ]
         }
     }

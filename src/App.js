@@ -7,6 +7,7 @@ import {Navbar, Footer} from "./components/Utils";
 import GlobalStyle from './globalStyles';
 import HomeSection from './pages/HomeSection';
 import ScrollToTop from './components/Utils/ScrollToTop';
+import ShopPage from './pages/shop/shop.component';
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
                 <Navbar/>
                 <Switch>
                     <Route exact path="/" component={HomeSection}/>
-
+                    <Route path="/" component={ShopPage}/>
                 </Switch>
                 <Footer/>
                 </Router>
