@@ -9,6 +9,8 @@ import HomeSection from './pages/HomeSection';
 import ScrollToTop from './components/Utils/ScrollToTop';
 import ShopPage from './pages/shop/shop.component';
 
+import './App.css';
+
 
 class App extends Component {
     render() {
