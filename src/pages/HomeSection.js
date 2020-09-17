@@ -29,10 +29,11 @@ const HomeSection = () => {
 
         <ReactVideoPlayer/>
         <Services/>
-        <ProductBanner/>
+
+        <ProductBanner2/>
         <Jumbotron/>
         <InfoSection {...homeObjThree}/>
-        <ProductBanner2/>
+        <ProductBanner/>
         <InfoSection {...homeObjOne}/>
         {/*
         <Slider/>

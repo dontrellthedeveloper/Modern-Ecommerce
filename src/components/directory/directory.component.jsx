@@ -10,37 +10,39 @@ class Directory extends React.Component {
 
         this.state = {
             sections: [
-                {
-                    title: 'hats',
-                    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                  {
+                    title: 'business dresses',
+                    imageUrl: 'https://i.ibb.co/RvJZL1R/women-business-dress-front-2-Cropped.jpg',
+
                     id: 1,
-                    linkUrl: 'shop/hats'
-                  },
-                  {
-                    title: 'jackets',
-                    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                    linkUrl: 'shop/business-dresses'
+                },
+                {
+                    title: 'summer dresses',
+                    imageUrl: 'https://i.ibb.co/98dY9jJ/women-summer-dress-front-2-Cropped.jpg',
+
                     id: 2,
-                    linkUrl: 'shop/jackets'
-                  },
-                  {
-                    title: 'sneakers',
-                    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                    linkUrl: 'shop/summer-dresses'
+                },
+                {
+                    title: 'women purses',
+                    imageUrl: 'https://i.ibb.co/pwQzWj5/women-purses-front-2-Cropped.jpg',
                     id: 3,
-                    linkUrl: 'shop/sneakers'
-                  },
+                    linkUrl: 'shop/women-purses'
+                },
                   {
-                    title: 'womens',
-                    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                    title: 'all women',
+                    imageUrl: 'https://i.ibb.co/R9Xqk6S/women-all-front.jpg',
                     size: 'large',
                     id: 4,
-                    linkUrl: 'shop/womens'
+                    linkUrl: 'shop/all-women'
                   },
                   {
-                    title: 'mens',
-                    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                    title: 'all men',
+                    imageUrl: 'https://i.ibb.co/YPkjs4v/men-all-products-front-Cropped.jpg',
                     size: 'large',
                     id: 5,
-                    linkUrl: 'shop/mens'
+                    linkUrl: 'shop/all-men'
                   }
             ]
         }
@@ -49,8 +51,8 @@ class Directory extends React.Component {
     render() {
         return (
             <div className="directory-menu">
-                {this.state.sections.map(({title, imageUrl, id, size}) => (
-                  <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />      
+                {this.state.sections.map(({id, ...otherSectionProps}) => (
+                  <MenuItem key={id} {...otherSectionProps} />      
                 ))}
             </div>
         );
