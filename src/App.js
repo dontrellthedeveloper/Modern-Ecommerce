@@ -12,6 +12,7 @@ import {createStructuredSelector} from 'reselect';
 
 import './App.css';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 
 import {connect} from 'react-redux';
@@ -62,6 +63,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={HomeSection}/>
                     <Route path="/shop" component={ShopPage}/>
+                    <Route exact path="/checkout" component={CheckoutPage} />
                     <Route 
                     exact 
                     path="/signin" 
