@@ -25,7 +25,7 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 
 
-const Navbar = ({currentUser}) => {
+const Navbar = ({currentUser, hidden}) => {
     const [click, setClick] = useState(false);
 
     const [button, setButton] = useState(true);
@@ -102,7 +102,7 @@ const Navbar = ({currentUser}) => {
                             
                             <CartIcon/>
                         </NavMenu>
-                        <CartDropdown/>
+                        {hidden ? null : <CartDropdown/>}
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
@@ -111,8 +111,9 @@ const Navbar = ({currentUser}) => {
 
 
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
+    currentUser,
+    hidden
 })
 
 
