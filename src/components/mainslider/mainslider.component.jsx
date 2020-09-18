@@ -16,10 +16,11 @@ import './mainslider.styles.scss'
 
 function MainSlider() {
     let sliderArr = [
+        <InfoSection {...homeObjOne}/>,
         <InfoSection {...homeObjTwo}/>,
         <InfoSection {...homeObjThree}/>,
-        <InfoSection {...homeObjFour}/>,
-        <InfoSection {...homeObjOne}/>
+        <InfoSection {...homeObjFour}/>
+
         ];
     const [x, setX] = useState(0);
     const goLeft = () => {
@@ -32,7 +33,7 @@ function MainSlider() {
      (x ===  -100*(sliderArr.length-1))?setX(0) : setX(x-100);
     };
 
-    // setTimeout(goRight, 10000);
+    setTimeout(goRight, 10000);
 
     
 
