@@ -13,11 +13,14 @@ import {Nav,
     NavItemBtn,
     NavBtnLink
 } from './navbar.elements';
+import {Link} from 'react-router-dom';
+
+import {auth} from '../../firebase/firebase.utils';
 
 
 
 
-const Navbar = () => {
+const Navbar = ({currentUser}) => {
     const [click, setClick] = useState(false);
 
     const [button, setButton] = useState(true);
@@ -74,6 +77,16 @@ const Navbar = () => {
                                     </NavBtnLink>
                                 )}
                             </NavItemBtn>
+                            {
+                                currentUser ?
+                                <div className="option" onClick={() => auth.signOut()}>
+                                SIGN OUT
+                                </div>
+                                :
+                                <Link className="option" to="/signin">
+                                SIGN IN
+                                </Link>
+                            }
                         </NavMenu>
                     </NavbarContainer>
                 </Nav>
