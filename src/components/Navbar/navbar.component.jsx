@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import {IconContext} from 'react-icons/lib';
-import {CoolButton} from '../../globalStyles';
+// import {CoolButton} from '../../globalStyles';
 import {Nav, 
     NavbarContainer, 
     NavLogo, 
@@ -11,13 +11,15 @@ import {Nav,
     NavItem,
     NavLinks,
     NavItemBtn,
-    NavBtnLink
+    // NavBtnLink
 } from './navbar.elements';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 import {auth} from '../../firebase/firebase.utils';
 
 import {connect} from 'react-redux';
+
+import CartIcon from '../cart-icon/cart-icon.component';
 
 
 
@@ -67,6 +69,7 @@ const Navbar = ({currentUser}) => {
                             </NavItem>
 
                             <NavItemBtn>
+                            {/*
                                 {button ? (
                                     <NavBtnLink to='/signin'>
                                         <CoolButton primary>SIGN UP</CoolButton>
@@ -78,17 +81,25 @@ const Navbar = ({currentUser}) => {
                                         </CoolButton>
                                     </NavBtnLink>
                                 )}
+                                */}
                             </NavItemBtn>
+                            
                             {
                                 currentUser ?
-                                <div className="option" onClick={() => auth.signOut()}>
-                                SIGN OUT
-                                </div>
+                                <NavItem>
+                                    <NavLinks className="option" onClick={() => auth.signOut()}>
+                                    Logout
+                                    </NavLinks>
+                                </NavItem>
                                 :
-                                <Link className="option" to="/signin">
-                                SIGN IN
-                                </Link>
+                                <NavItem>
+                                    <NavLinks className="option" to="/signin">
+                                    Login
+                                    </NavLinks>
+                                </NavItem>
                             }
+                            
+                            <CartIcon/>
                         </NavMenu>
                     </NavbarContainer>
                 </Nav>
