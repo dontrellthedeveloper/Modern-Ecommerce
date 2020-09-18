@@ -14,7 +14,7 @@ import { InfoSection } from '../components/Utils';
 
 import {Jumbotron} from '../components/jumbotron/jumbotron.component';
 import HomePage from '../components/homepage/homepage.component';
-import ReactVideoPlayer from '../components/videoplayer/videoplayer.component';
+// import ReactVideoPlayer from '../components/videoplayer/videoplayer.component';
 import Services from '../components/servicessection/services.component';
 import MainSlider from '../components/mainslider/mainslider.component';
 import ProductBanner from '../components/productbanner/productbanner.component';
@@ -28,8 +28,9 @@ const HomeSection = () => {
 
         
         <HomePage/>
-
+        {/*
         <ReactVideoPlayer/>
+        */}
         <Services/>
 
         <ProductBanner2/>
